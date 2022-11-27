@@ -69,6 +69,12 @@
     margin-left: 5%;
 }
 
+.main-from input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .main-form div span{
     width: 100%;
     font-size: 1.2em;
