@@ -1,60 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Aespire Booking</title>
+
+	<title>Aespire Appointment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
 </head>
 
-<body class="main_bg">
+<body>
 
-    <div class="form">
+	<div class="container">
 
-        <div class="form-text">
-            <h1>Aespire Real Estate</h1>
-            <p>"Buy land; they're not making it anymore."</p>
-            <p>Book Now!</p>
-        </div>
+		<div class="contact-box">
 
-        <div class="main-form">
+			<div class="left"></div>
 
-            <form action="index.php" method="get">
+			<div class="right">
 
-                <div>
-                    <span>Full Name</span>
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                </div>
+				<h2>Aespire Appointment</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="number" class="field" placeholder="Phone">
+				<input type="date" class="field">
+				<input type="time" class="field">
+				<textarea placeholder="Message" class="field"></textarea>
 
-                <div>
-                    <span>Email Address</span>
-                    <input type="email" name="name" id="name" placeholder="Your email address" required> 
-                </div>
-                <div>
-                    <span>Time</span>
-                    <input type="time" name="time" id="time" placeholder="Time" required>
-                </div>
+				<button class="btn">Send</button>
 
-                <div>
-                    <span>Date</span>
-                    <input type="date" name="date" id="date" placeholder="date" required>
-                </div>
+			</div>
 
-                <div class="phoneNo">
-                    <span>Phone Number</span>
-                    <input type="number" name="number" id="number" placeholder="Your phone number" required>
-                </div>
+		</div>
 
-            </form>
-
-            <div id="submit">
-                <input type="submit" value="SUBMIT" id="submit">
-            </div>
-
-        </div>
-    </div>
+	</div>
+    
 </body>
-
 </html>

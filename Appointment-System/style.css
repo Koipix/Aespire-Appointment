@@ -1,104 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
-
 *{
-    margin: 0;
-    padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
 }
 
-.main_bg{
-    background: url(aes.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+body{
+	height: 100vh;
+	width: 100%;
 }
 
-.form{
-    width: 800px;
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
 }
 
-.form-text{
-    text-align: center;
-    margin: 0 0 40px 0;
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/aes.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
-.form-text h1{
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: 4em;
-    margin-bottom: 15px;
+.left{
+	background: url("img/aes.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
 }
 
-.form-text p{
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: 1.3em;
+.right{
+	padding: 25px 40px;
 }
 
-.main-form {
-    text-align: center;
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
 }
 
-.main-form div{
-    margin: 10px 30px;
-    width: 300px;
-    display: inline-block;
-    margin-top: 15px;
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #25c4da;
 }
 
-.main-form div input {
-    width: 100%;
-    background: rgba(0,0,0,0.15);
-    border: none;
-    border-radius: 25px;
-    font-size: 1em;
-    outline: none;
-    padding: 15px;
-    margin-top: 10px;
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
 }
 
-.main-form .phoneNo {
-    margin-left: 5%;
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.main-from input::-webkit-outer-spin-button,
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #1689cc;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #25c4da;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.main-form div span{
-    width: 100%;
-    font-size: 1.2em;
-    justify-content: center;
-}
-
-#submit{
-    size: 200px;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 40px;
-    text-align: center;
-}
-
-#submit input{
-    width: 200px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.1em;
-    background-color: #2ee7ff !important;
-    transition: all .3s;
-}
-
-#submit input:hover {
-    cursor: pointer;
-}
-
-@media screen and (max-width:710px) {
-    .main-form{
-        text-align: center;
-    }
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
 }
