@@ -44,7 +44,7 @@ body{
 }
 
 .left{
-	background: url("img/aes.jpg") no-repeat center;
+	background: url("img/Untitled-1.png") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
@@ -115,6 +115,51 @@ input::-webkit-inner-spin-button {
 
 textarea {
 	resize: none;
+}
+
+#customAlert
+ {
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 999;
+ background-color: transparent;
+ transition: 1s;
+}
+
+#box 
+{
+	border-radius: 10px;
+	margin-top: 300px;
+	margin-left: 550px;
+	height: 150px;
+	width: 500px;
+	text-align: center;
+	box-shadow: 2px 2px 8px black;
+	background-color: white;
+}
+.heading
+{
+	background-color: skyblue;
+	color: white;
+	font-size: 1em;
+	padding: 5px;
+	margin-bottom: 30px;
+
+}
+#confirmbtn
+{
+	height: 25px;
+	width: 80px;
+	border-radius: 8px;
+	background-color: skyblue;
+	color: white;
+	cursor: pointer;
+	margin-top: 40px;
+	margin-left: 400px;
 }
 
 @media screen and (max-width: 880px){
